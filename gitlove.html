@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>True Love</title>
+    <style>
+      h1 {
+        font-size: 100px;
+        text-align: center;
+        color: red;
+      }
+      button#yes {
+        position: fixed;
+        left: 55%;
+        padding: 6px 20px;
+        background-color: rgb(65, 89, 230);
+        color: cornsilk;
+      }
+      button#no {
+        position: fixed;
+        left: 40%;
+        padding: 6px 20px;
+        background-color: rgb(65, 89, 230);
+        color: cornsilk;
+      }
+      p#demo {
+        text-align: center;
+        font-size: 28px;
+        color: darkslateblue;
+        font-weight: 700;
+      }
+      p#demo2 {
+        text-align: center;
+        font-size: 28px;
+        color: dodgerblue;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Do You Love Me ?</h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <button id="yes" type="button" onclick="myFunction()">Yes</button>
+    <button id="no" type="button" onclick="myFunction2()">No</button>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "I Love You Too";
+      }
+      function myFunction2() {
+        document.getElementById("demo2").innerHTML = "I Love You So Much";
+      }
+    </script>
+  </body>
+</html>
